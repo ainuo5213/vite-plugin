@@ -29,18 +29,19 @@ export default function MarkdownTransformer(
   const markdownTagReg = new RegExp(regText, 'g')
   const markdownContent = new RegExp(regText)
   const vueFileRegex = /\.vue$/
-  const md = new MarkdownIt(option.markdownItOptions)
-  option.plugins.forEach(r => {
-    if (typeof r === 'function') {
-      md.use(r)
-    } else {
-      md.use(
-        r.plugin,
-        (r as unknown as MdPluginWithParams).params ||
-          (r as unknown as MdPluginWithOptions).options
-      )
-    }
-  })
+  const md = new MarkdownIt(option.markdownItOptions || {})
+  option.plugins &&
+    option.plugins.forEach(r => {
+      if (typeof r === 'function') {
+        md.use(r)
+      } else {
+        md.use(
+          r.plugin,
+          (r as unknown as MdPluginWithParams).params ||
+            (r as unknown as MdPluginWithOptions).options
+        )
+      }
+    })
   const transformMarkdown = (content: string) => {
     return `
     <section class="${option.customClass || defaultCustomClass}">${md.render(
@@ -56,12 +57,12 @@ export default function MarkdownTransformer(
     transform(code, id, options) {
       if (vueFileRegex.test(id) && markdownTagReg.test(code)) {
         const mdList = code.match(markdownTagReg)
-        if (mdList.length) {
+        if (mdList && mdList.length) {
           let transformCode = code
           mdList.forEach(r => {
             transformCode = transformCode.replace(
               r,
-              transformMarkdown(r.match(markdownContent)[1].trim())
+              transformMarkdown(r.match(markdownContent)![1].trim())
             )
           })
 

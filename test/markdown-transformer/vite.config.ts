@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 // @ts-ignore
-import markdownTransformer from '../../package/vite-plugin-markdown-transformer'
+import markdownTransformer from '../../package/vite-plugin-markdown-transformer/src'
 
 // https://vitejs.dev/config/
 export default defineConfig({

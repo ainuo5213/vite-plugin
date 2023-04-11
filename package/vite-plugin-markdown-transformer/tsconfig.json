@@ -13,6 +13,6 @@
     "baseUrl": ".",
     "lib": ["ESNext", "dom", "ES2015.Promise"]
   },
-  "include": ["package/**/*.ts"],
+  "include": ["src/**/*.ts", "index.d.ts"],
   "exclude": ["node_modules"]
 }
