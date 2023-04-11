@@ -1,6 +1,6 @@
 {
   "name": "@ainuo-utils/vite-plugin-markdown-transformer",
-  "version": "1.0.7",
+  "version": "0.0.1",
   "main": "dist/index.js",
   "scripts": {
     "build": "rimraf dist && npm run build-bundle",
