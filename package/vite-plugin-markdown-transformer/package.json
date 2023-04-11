@@ -1,20 +1,20 @@
 {
   "name": "@ainuo-utils/vite-plugin-markdown-transformer",
-  "version": "1.0.0",
+  "version": "1.0.7",
   "main": "dist/index.js",
   "scripts": {
     "build": "rimraf dist && npm run build-bundle",
-    "build-bundle": "esbuild src/index.ts --bundle --platform=node --target=node12 --external:@vue/compiler-sfc --external:vue/compiler-sfc --external:vite --outfile=dist/index.js"
+    "build-bundle": "esbuild src/index.ts --bundle --platform=node --external:vite --outfile=dist/index.js"
   },
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
     "markdown-it": "^13.0.1",
-    "vite": "^4.2.1"
+    "vite": "^4.2.1",
+    "@types/markdown-it": "^12.2.3"
   },
   "devDependencies": {
-    "@types/markdown-it": "^12.2.3",
     "esbuild": "^0.17.16",
     "rimraf": "^5.0.0"
   }

@@ -16,7 +16,7 @@ export type MarkdownTransformerOption = {
 }
 const defaultMatchTag = 'markdown'
 const defaultCustomClass = 'vite-plugin-markdown-transform__wrapper'
-export default function MarkdownTransformer(
+export function markdownTransformer(
   option: MarkdownTransformerOption = {
     matchTag: defaultMatchTag,
     customClass: defaultCustomClass,

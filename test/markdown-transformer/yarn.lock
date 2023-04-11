@@ -2,6 +2,15 @@
 # yarn lockfile v1
 
 
+"@ainuo-utils/vite-plugin-markdown-transformer@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@ainuo-utils/vite-plugin-markdown-transformer/-/vite-plugin-markdown-transformer-1.0.7.tgz#80a12935f0e5d05d6841102cbaf1efbc9aabebc4"
+  integrity sha512-wLUefavmuGiJnRsO4QAI88MjretdyhGS8ioZkrk++05EFfVrH5/zdCnxZbbf5d2HVeNh9DQDNuyPjMwcHqXMRw==
+  dependencies:
+    "@types/markdown-it" "^12.2.3"
+    markdown-it "^13.0.1"
+    vite "^4.2.1"
+
 "@babel/parser@^7.16.4":
   version "7.21.4"
   resolved "https://registry.npmmirror.com/@babel/parser/-/parser-7.21.4.tgz#94003fdfc520bbe2875d4ae557b43ddb6d880f17"
@@ -116,6 +125,24 @@
   version "0.17.16"
   resolved "https://registry.npmmirror.com/@esbuild/win32-x64/-/win32-x64-0.17.16.tgz#260f19b0a3300d22c3a3f52722c671dc561edaa3"
   integrity sha512-xJ7OH/nanouJO9pf03YsL9NAFQBHd8AqfrQd7Pf5laGyyTt/gToul6QYOA/i5i/q8y9iaM5DQFNTgpi995VkOg==
+
+"@types/linkify-it@*":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@types/linkify-it/-/linkify-it-3.0.2.tgz#fd2cd2edbaa7eaac7e7f3c1748b52a19143846c9"
+  integrity sha512-HZQYqbiFVWufzCwexrvh694SOim8z2d+xJl5UNamcvQFejLY/2YUtzXHYi3cHdI7PMlS8ejH2slRAOJQ32aNbA==
+
+"@types/markdown-it@^12.2.3":
+  version "12.2.3"
+  resolved "https://registry.yarnpkg.com/@types/markdown-it/-/markdown-it-12.2.3.tgz#0d6f6e5e413f8daaa26522904597be3d6cd93b51"
+  integrity sha512-GKMHFfv3458yYy+v/N8gjufHO6MSZKCOXpZc5GXIWWy8uldwfmPn98vp81gZ5f9SVw8YYBctgfJ22a2d7AOMeQ==
+  dependencies:
+    "@types/linkify-it" "*"
+    "@types/mdurl" "*"
+
+"@types/mdurl@*":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@types/mdurl/-/mdurl-1.0.2.tgz#e2ce9d83a613bacf284c7be7d491945e39e1f8e9"
+  integrity sha512-eC4U9MlIcu2q0KQmXszyn5Akca/0jrQmwDRgpAMJai7qBWq4amIQhZyNau4VYGtCeALvW1/NtjzJJ567aZxfKA==
 
 "@vitejs/plugin-vue@^4.1.0":
   version "4.1.0"
@@ -371,7 +398,7 @@ magic-string@^0.25.7:
 
 markdown-it@^13.0.1:
   version "13.0.1"
-  resolved "https://registry.npmmirror.com/markdown-it/-/markdown-it-13.0.1.tgz#c6ecc431cacf1a5da531423fc6a42807814af430"
+  resolved "https://registry.yarnpkg.com/markdown-it/-/markdown-it-13.0.1.tgz#c6ecc431cacf1a5da531423fc6a42807814af430"
   integrity sha512-lTlxriVoy2criHP0JKRhO2VDG9c2ypWCsT237eDiLqi09rmbKoUetyGHq2uOIRoRS//kfoJckS0eUzzkDR+k2Q==
   dependencies:
     argparse "^2.0.1"
@@ -466,13 +493,6 @@ uc.micro@^1.0.1, uc.micro@^1.0.5:
   version "1.0.6"
   resolved "https://registry.npmmirror.com/uc.micro/-/uc.micro-1.0.6.tgz#9c411a802a409a91fc6cf74081baba34b24499ac"
   integrity sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==
-
-"vite-plugin-markdown-transformer@file:../../package/vite-plugin-markdown-transformer":
-  version "1.0.0"
-  dependencies:
-    github-markdown-css "^5.2.0"
-    markdown-it "^13.0.1"
-    vite "^4.2.1"
 
 vite@^4.2.0, vite@^4.2.1:
   version "4.2.1"

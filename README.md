@@ -7,7 +7,7 @@
 ```typescript
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import markdownTransformer from 'vite-plugin-markdown-transformer'
+import markdownTransformer from '@ainuo-utils/vite-plugin-markdown-transformer'
 
 export default defineConfig({
   plugins: [

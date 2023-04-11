@@ -5004,13 +5004,13 @@ var require_markdown_it = __commonJS({
 // src/index.ts
 var src_exports = {};
 __export(src_exports, {
-  default: () => MarkdownTransformer
+  markdownTransformer: () => markdownTransformer
 });
 module.exports = __toCommonJS(src_exports);
 var import_markdown_it = __toESM(require_markdown_it());
 var defaultMatchTag = "markdown";
 var defaultCustomClass = "vite-plugin-markdown-transform__wrapper";
-function MarkdownTransformer(option = {
+function markdownTransformer(option = {
   matchTag: defaultMatchTag,
   customClass: defaultCustomClass,
   plugins: []
@@ -5059,3 +5059,7 @@ function MarkdownTransformer(option = {
     }
   };
 }
+// Annotate the CommonJS export names for ESM import in node:
+0 && (module.exports = {
+  markdownTransformer
+});

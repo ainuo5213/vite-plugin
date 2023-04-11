@@ -314,11 +314,6 @@ rollup@^3.18.0:
   optionalDependencies:
     fsevents "~2.3.2"
 
-run-s@^0.0.0:
-  version "0.0.0"
-  resolved "https://registry.npmmirror.com/run-s/-/run-s-0.0.0.tgz#599912be20c00ba7698655c9936d075d31b71754"
-  integrity sha512-KPDNauF2Tpnm3nG0+0LJuJxwBFrhAdthpM8bVdDvjWQA7pWP7QoNwEl1+dJ7WVJj81AQP/i6kl6JUmAk7tg3Og==
-
 source-map-js@^1.0.2:
   version "1.0.2"
   resolved "https://registry.npmmirror.com/source-map-js/-/source-map-js-1.0.2.tgz#adbc361d9c62df380125e7f161f71c826f1e490c"
