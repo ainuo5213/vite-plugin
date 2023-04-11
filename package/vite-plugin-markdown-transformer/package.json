@@ -1,7 +1,13 @@
 {
   "name": "@ainuo-utils/vite-plugin-markdown-transformer",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "main": "dist/index.js",
+  "description": "vite-plugin that transform markdown to html",
+  "keywords": [
+    "markdown",
+    "vue",
+    "vite-plugin"
+  ],
   "scripts": {
     "build": "rimraf dist && npm run build-bundle",
     "build-bundle": "esbuild src/index.ts --bundle --platform=node --external:vite --outfile=dist/index.js"
@@ -9,6 +15,11 @@
   "publishConfig": {
     "access": "public"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ainuo5213/vite-plugin.git"
+  },
+  "readme": "./README.md",
   "dependencies": {
     "markdown-it": "^13.0.1",
     "vite": "^4.2.1",
